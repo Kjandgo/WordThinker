@@ -1,4 +1,4 @@
-# AGENTS.md
+# wordthinker-fe/AGENTS.md
 
 ## 프로젝트 개요
 
