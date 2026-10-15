@@ -1,0 +1,4 @@
+# Local environment files at any directory depth
+.env
+.env.*
+!.env.example
