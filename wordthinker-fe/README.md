@@ -11,6 +11,17 @@ npm run build
 npm run preview
 ```
 
+## 코드 검사
+
+```sh
+npm run lint
+npm run lint:fix
+```
+
+`lint`는 JavaScript 권장 규칙과 Vue 3 필수 규칙으로 `.js`, `.mjs`, `.cjs`, `.vue` 파일을 검사합니다. 엄격한 동등 비교와 `const` 사용도 검사하며, 경고가 있으면 실패합니다. `lint:fix`는 자동 수정 가능한 문제를 수정하므로 실행 후 변경 내용을 확인하세요.
+
+설정은 `eslint.config.js`에 있습니다. `src/`에는 브라우저 전역을, 루트 설정과 `scripts/`에는 Node.js 전역을 적용합니다. `node_modules/`, 빌드 결과, coverage, n8n 자료는 검사에서 제외합니다. 기존 코드의 포맷을 유지하기 위해 포맷 규칙은 강제하지 않습니다.
+
 ## 구조
 
 - `src/App.vue`: 최상위 라우트 렌더링
